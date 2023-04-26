@@ -23,7 +23,28 @@ export default {
         <button class="my-btn">Sign in</button>
       </div>
     </section>
-    <section class="jumbotron"></section>
+    <section class="jumbotron">
+      <div class="row">
+        <div class="col-4 mt-4">
+          <div class="text">
+            <h2>Business Planning</h2>
+            <p>Digital Technology</p>
+            <h2>Modern Solution !</h2>
+          </div>
+          <div class="description pt-4">
+            <p>
+              When, while the lovely valley teems with vapour around means the
+              meridian sun strikes the upper surface.
+            </p>
+          </div>
+          <button class="my-btn red m-2">Try It Now</button>
+          <button class="my-btn">Explore More</button>
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+          <img src="../assets/images/header.png" alt="" class="w-50" />
+        </div>
+      </div>
+    </section>
   </header>
 </template>
 
@@ -31,9 +52,9 @@ export default {
 header {
   background: linear-gradient(#0b1953, #020331);
   //   DEBUG
-  height: 300px;
+  // height: 300px;
   .top {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 1rem 0;
     .links {
@@ -51,13 +72,32 @@ header {
         color: #f9636b;
       }
     }
-    .my-btn {
+  }
+  .my-btn {
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px 30px;
+    background: linear-gradient(0.25turn, #05a1ce, #1e4589);
+    border-radius: 30px;
+  }
+  .my-btn.red {
+    background: linear-gradient(0.25turn, #b9276e, #f8626b);
+  }
+  .jumbotron {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    .text {
       color: white;
-      border: none;
-      text-align: center;
-      padding: 10px 30px;
-      background: linear-gradient(0.25turn, #05a1ce, #1e4589);
-      border-radius: 30px;
+      font-weight: 200;
+      font-size: 2rem;
+      h2 {
+        font-weight: 700;
+      }
+    }
+    .description {
+      color: #03a7d3e6;
     }
   }
 }
