@@ -1,4 +1,6 @@
 <script>
+import AppBlog from "./AppBlog.vue";
+import PricingApp from "./PricingApp.vue";
 import CardProps from "./CardProps.vue";
 import Jumbo from "./Jumbo.vue";
 export default {
@@ -6,6 +8,8 @@ export default {
   components: {
     CardProps,
     Jumbo,
+    PricingApp,
+    AppBlog,
   },
   data() {
     return {
@@ -91,12 +95,12 @@ export default {
     </div>
     <!-- /OUR SERVICES SECTION -->
     <!-- PROJECT SECTION -->
-    <div class="jumbomain">
+    <section class="jumbomain">
       <Jumbo />
-    </div>
+    </section>
     <!-- /PROJECT SECTION -->
     <!-- CAROUSEL SECTION -->
-    <div class="carousel pt-5">
+    <section class="carousel pt-5">
       <div class="text">
         <h5>Portfolio</h5>
         <p><strong>latest</strong> work</p>
@@ -108,11 +112,18 @@ export default {
       <div class="row">
         <CardProps :cardArray="carousel" />
       </div>
-    </div>
+    </section>
     <!-- /CAROUSEL SECTION -->
     <!-- OUR PRICING SECTION -->
-
+    <section class="pricing">
+      <PricingApp />
+    </section>
     <!-- /OUR PRICING SECTION -->
+    <!-- BLOG SECTION -->
+    <section class="blog">
+      <AppBlog />
+    </section>
+    <!-- /BLOG SECTION -->
   </main>
 </template>
 
@@ -171,5 +182,10 @@ export default {
       }
     }
   }
+}
+
+.pricing {
+  height: 1000px;
+  background: linear-gradient(to top, white 50%, #04083b 50%);
 }
 </style>
