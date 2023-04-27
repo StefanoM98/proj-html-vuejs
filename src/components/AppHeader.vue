@@ -2,7 +2,7 @@
 export default {
   name: "AppHeader",
   props: {
-    linkArray: Object,
+    linkArray: Array,
   },
 };
 </script>
@@ -25,11 +25,11 @@ export default {
     </section>
     <section class="jumbotron">
       <div class="row">
-        <div class="col-4 mt-4">
+        <div class="col-4 pt-5">
           <div class="text">
-            <h2>Business Planning</h2>
+            <p><strong>Business Planning</strong></p>
             <p>Digital Technology</p>
-            <h2>Modern Solution !</h2>
+            <p><strong>Modern Solution !</strong></p>
           </div>
           <div class="description pt-4">
             <p>
@@ -37,11 +37,11 @@ export default {
               meridian sun strikes the upper surface.
             </p>
           </div>
-          <button class="my-btn red m-2">Try It Now</button>
+          <button class="my-btn red m-3">Try It Now</button>
           <button class="my-btn">Explore More</button>
         </div>
         <div class="col-8 d-flex justify-content-end">
-          <img src="../assets/images/header.png" alt="" class="w-50" />
+          <img src="../assets/images/header.png" alt="" class="w-75" />
         </div>
       </div>
     </section>
@@ -51,8 +51,6 @@ export default {
 <style lang="scss" scoped>
 header {
   background: linear-gradient(#0b1953, #020331);
-  //   DEBUG
-  // height: 300px;
   .top {
     width: 75%;
     margin: 0 auto;
@@ -77,7 +75,7 @@ header {
     color: white;
     border: none;
     text-align: center;
-    padding: 10px 30px;
+    padding: 10px 40px;
     background: linear-gradient(0.25turn, #05a1ce, #1e4589);
     border-radius: 30px;
   }
@@ -90,11 +88,8 @@ header {
     padding: 1rem 0;
     .text {
       color: white;
-      font-weight: 200;
-      font-size: 2rem;
-      h2 {
-        font-weight: 700;
-      }
+      font-weight: 500;
+      font-size: 3rem;
     }
     .description {
       color: #03a7d3e6;
