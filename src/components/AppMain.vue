@@ -1,9 +1,11 @@
 <script>
 import CardProps from "./CardProps.vue";
+import Jumbo from "./Jumbo.vue";
 export default {
   name: "AppMain",
   components: {
     CardProps,
+    Jumbo,
   },
   data() {
     return {
@@ -59,15 +61,21 @@ export default {
         <button class="my-btn">View All Services</button>
       </div>
     </div>
+    <div class="jumbomain">
+      <Jumbo />
+    </div>
   </main>
 </template>
 
 <style lang="scss" scoped>
-.other {
-  color: #f9636b;
-}
-.title {
-  font-size: 3rem;
+.text {
+  padding: 4rem 0;
+  .other {
+    color: #f9636b;
+  }
+  .title {
+    font-size: 3rem;
+  }
 }
 .btn {
   padding-top: 6rem;
@@ -80,5 +88,9 @@ export default {
   text-align: center;
   padding: 10px 40px;
   border-radius: 30px;
+}
+.jumbomain {
+  background: linear-gradient(#0b1953, #020331);
+  padding: 3rem;
 }
 </style>
