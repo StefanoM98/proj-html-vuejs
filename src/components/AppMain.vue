@@ -66,6 +66,7 @@ export default {
           description: " Digital Experience",
         },
       ],
+      // blogCard: [{}],
     };
   },
   methods: {
@@ -121,7 +122,20 @@ export default {
     <!-- /OUR PRICING SECTION -->
     <!-- BLOG SECTION -->
     <section class="blog">
-      <AppBlog />
+      <div class="text text-center">
+        <p class="other">Blog</p>
+        <p class="title"><strong>Latest</strong> Posts</p>
+        <p class="mb-5">
+          When, while the lovely valley teems with vapour around means the
+          meridian sun strikes <br />
+          the upper surface.
+        </p>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <AppBlog />
+        </div>
+      </div>
     </section>
     <!-- /BLOG SECTION -->
   </main>
@@ -187,5 +201,11 @@ export default {
 .pricing {
   height: 1000px;
   background: linear-gradient(to top, white 50%, #04083b 50%);
+}
+
+.blog {
+  .container-fluid {
+    width: 80%;
+  }
 }
 </style>

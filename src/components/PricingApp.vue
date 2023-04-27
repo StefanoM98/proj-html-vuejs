@@ -6,11 +6,11 @@ export default {
 <template>
   <div class="container-fluid text-center mt-5 pt-5">
     <p class="list">Price List</p>
-    <div class="text">
+    <div class="text pb-4">
       <h2>Our Pricing</h2>
       <p>When, while the lovely valley teems with vapour around means the</p>
     </div>
-    <div class="row d-flex">
+    <div class="row d-flex mt-4">
       <div class="col">
         <div class="card pt-4">
           <div class="characteristics">
