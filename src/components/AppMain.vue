@@ -11,7 +11,7 @@ export default {
     return {
       card: [
         {
-          image: "../assets/images/Group-247.png",
+          image: "Group-247.png",
           title: "Data Analyst",
           description:
             "When, while the lovely valley teems with vapour around means the upper",
@@ -35,17 +35,45 @@ export default {
             "When, while the lovely valley teems with vapour around means the upper",
         },
       ],
+      carousel: [
+        {
+          image: "8wa60okr-1-790x576.jpg",
+          title: "Basket of Flower on table",
+          description: "Branding Strategy",
+        },
+        {
+          image: "84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
+          title: "Purinky Products",
+          description: "Digital Exprerience",
+        },
+        {
+          image: "a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
+          title: "SatisfyPoster",
+          description: "Branding Strategy",
+        },
+        {
+          image: "DRY-1-790x576.jpg",
+          title: "MockUp",
+          description: " Digital Experience",
+        },
+        {
+          image: "DRY-1-790x576.jpg",
+          title: "MockUp",
+          description: " Digital Experience",
+        },
+      ],
     };
   },
   methods: {
-    // getImagePath(img) {
-    //   return new URL(`../assets/images/${img.image}`, import.meta.url).href;
-    // },
+    getImagePath(img) {
+      return new URL(`../assets/images/${img.image}`, import.meta.url).href;
+    },
   },
 };
 </script>
 <template>
   <main>
+    <!-- OUR SERVICES SECTION -->
     <div class="container text-center pt-5">
       <div class="text">
         <p class="other">Our Services</p>
@@ -61,15 +89,42 @@ export default {
         <button class="my-btn">View All Services</button>
       </div>
     </div>
+    <!-- /OUR SERVICES SECTION -->
+    <!-- PROJECT SECTION -->
     <div class="jumbomain">
       <Jumbo />
     </div>
+    <!-- /PROJECT SECTION -->
+    <!-- CAROUSEL SECTION -->
+    <div class="carousel pt-5">
+      <div class="text">
+        <h5>Portfolio</h5>
+        <p><strong>latest</strong> work</p>
+        <div class="but">
+          <button>&larr;</button>
+          <button>&rarr;</button>
+        </div>
+      </div>
+      <div class="row">
+        <CardProps :cardArray="carousel" />
+      </div>
+    </div>
+    <!-- /CAROUSEL SECTION -->
+    <!-- OUR PRICING SECTION -->
+
+    <!-- /OUR PRICING SECTION -->
   </main>
 </template>
 
 <style lang="scss" scoped>
 .text {
   padding: 4rem 0;
+  position: relative;
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .other {
     color: #f9636b;
   }
@@ -92,5 +147,29 @@ export default {
 .jumbomain {
   background: linear-gradient(#0b1953, #020331);
   padding: 3rem;
+}
+
+.carousel {
+  .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3rem;
+    position: relative;
+    .but {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      button {
+        margin: 10px;
+        background-color: white;
+        color: #f8626b;
+        width: 60px;
+        height: 60px;
+        border: #f8626b 1px solid;
+        border-radius: 50%;
+        font-size: 2rem;
+      }
+    }
+  }
 }
 </style>
