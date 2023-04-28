@@ -174,14 +174,31 @@ export default {
     </section>
     <!-- /TESTIMONIAL SECTION -->
     <!-- NEWSLETTER SECTION -->
-
     <NewsletterApp />
-
     <!-- /NEWSLETTER SECTION -->
+
+    <a class="tag" href="javascript:scroll(0,0)">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </main>
 </template>
 
 <style lang="scss" scoped>
+main {
+  position: relative;
+  .tag {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: black;
+    position: absolute;
+    right: 30px;
+    // padding: 0px;
+  }
+}
 .services {
   padding: 2rem 0;
 }
