@@ -34,7 +34,7 @@ export default {
     <div class="row">
       <div class="col p-4 d-flex justify-content-between">
         <div class="card d-flex align-items-center text-center">
-          <div class="image text-">
+          <div class="image">
             <img
               src="../assets/images/szabo-viktor-1266895-unsplash-1024x1024.png"
               alt=""
@@ -63,7 +63,7 @@ export default {
         <div class="card d-flex align-items-center text-center">
           <div class="image text-">
             <img
-              src="../assets/images/szabo-viktor-1266895-unsplash-1024x1024.png"
+              src="../assets/images/fabio-spinelli-695744-unsplash-1024x1024.png"
               alt=""
             />
           </div>
@@ -90,7 +90,7 @@ export default {
         <div class="card d-flex align-items-center text-center">
           <div class="image text-">
             <img
-              src="../assets/images/szabo-viktor-1266895-unsplash-1024x1024.png"
+              src="../assets/images/philipe-cavalcante-539505-unsplash-1024x1024.png"
               alt=""
             />
           </div>

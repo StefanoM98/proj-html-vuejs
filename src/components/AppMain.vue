@@ -4,6 +4,7 @@ import AppBlog from "./AppBlog.vue";
 import PricingApp from "./PricingApp.vue";
 import CardProps from "./CardProps.vue";
 import Jumbo from "./Jumbo.vue";
+import NewsletterApp from "./NewsletterApp.vue";
 export default {
   name: "AppMain",
   components: {
@@ -12,6 +13,7 @@ export default {
     PricingApp,
     AppBlog,
     TestimonialApp,
+    NewsletterApp,
   },
   data() {
     return {
@@ -171,6 +173,11 @@ export default {
       <TestimonialApp />
     </section>
     <!-- /TESTIMONIAL SECTION -->
+    <!-- NEWSLETTER SECTION -->
+
+    <NewsletterApp />
+
+    <!-- /NEWSLETTER SECTION -->
   </main>
 </template>
 
