@@ -6,8 +6,8 @@ export default {
     cardArray: Array,
   },
   methods: {
-    getImagePath(elem) {
-      return new URL(`../assets/images/${elem.image}`, import.meta.url).href;
+    getImagePath(img) {
+      return new URL(`../assets/images/${img.image}`, import.meta.url).href;
     },
   },
 };

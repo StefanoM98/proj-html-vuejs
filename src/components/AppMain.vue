@@ -1,4 +1,5 @@
 <script>
+import TestimonialApp from "./TestimonialApp.vue";
 import AppBlog from "./AppBlog.vue";
 import PricingApp from "./PricingApp.vue";
 import CardProps from "./CardProps.vue";
@@ -10,6 +11,7 @@ export default {
     Jumbo,
     PricingApp,
     AppBlog,
+    TestimonialApp,
   },
   data() {
     return {
@@ -66,34 +68,53 @@ export default {
           description: " Digital Experience",
         },
       ],
-      // blogCard: [{}],
+      testimonials: [
+        {
+          image: "fabio-spinelli-695744-unsplash-1024x1024",
+          description:
+            "When, while the lovely valley teems with vapour around meand meridiannsun strikes the upper impenetrable foliage of my trees, and but a thousand.",
+          name: "Michkel Anegl",
+          work: "Marketing Management",
+        },
+        {
+          image: "philipe-cavalcante-539505-unsplash-1024x1024",
+          description:
+            "When, while the lovely valley teems with vapour around meand meridiannsun strikes the upper impenetrable foliage of my trees, and but a thousand.",
+          name: "Michkel Anegl",
+          work: "Marketing Management",
+        },
+        {
+          image: "szabo-viktor-1266895-unsplash-1024x1024",
+          description:
+            "When, while the lovely valley teems with vapour around meand meridiannsun strikes the upper impenetrable foliage of my trees, and but a thousand.",
+          name: "Michkel Anegl",
+          work: "Marketing Management",
+        },
+      ],
     };
-  },
-  methods: {
-    getImagePath(img) {
-      return new URL(`../assets/images/${img.image}`, import.meta.url).href;
-    },
   },
 };
 </script>
 <template>
   <main>
     <!-- OUR SERVICES SECTION -->
-    <div class="container text-center pt-5">
-      <div class="text">
-        <p class="other">Our Services</p>
-        <p class="title"><strong>What</strong> We Do</p>
-        <p class="mb-5">
-          When, while the lovely valley teems with vapour around means the
-        </p>
+    <section class="services">
+      <div class="container text-center pt-5">
+        <div class="text">
+          <p class="other">Our Services</p>
+          <p class="title"><strong>What</strong> We Do</p>
+          <p class="mb-5">
+            When, while the lovely valley teems with vapour around means the
+          </p>
+        </div>
+        <div class="row">
+          <CardProps :cardArray="card" />
+        </div>
+        <div class="btn">
+          <button class="my-btn">View All Services</button>
+        </div>
       </div>
-      <div class="row">
-        <CardProps :cardArray="card" />
-      </div>
-      <div class="btn">
-        <button class="my-btn">View All Services</button>
-      </div>
-    </div>
+    </section>
     <!-- /OUR SERVICES SECTION -->
     <!-- PROJECT SECTION -->
     <section class="jumbomain">
@@ -132,16 +153,31 @@ export default {
         </p>
       </div>
       <div class="container-fluid">
-        <div class="row">
-          <AppBlog />
-        </div>
+        <AppBlog />
       </div>
     </section>
     <!-- /BLOG SECTION -->
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial">
+      <div class="text text-center">
+        <p class="other">Blog</p>
+        <p class="title"><strong>Latest</strong> Posts</p>
+        <p class="mb-5">
+          When, while the lovely valley teems with vapour around means the
+          meridian sun strikes <br />
+          the upper surface.
+        </p>
+      </div>
+      <TestimonialApp />
+    </section>
+    <!-- /TESTIMONIAL SECTION -->
   </main>
 </template>
 
 <style lang="scss" scoped>
+.services {
+  padding: 2rem 0;
+}
 .text {
   padding: 4rem 0;
   position: relative;
@@ -171,10 +207,11 @@ export default {
 }
 .jumbomain {
   background: linear-gradient(#0b1953, #020331);
-  padding: 3rem;
+  padding: 4rem 0;
 }
 
 .carousel {
+  padding: 4rem 0;
   .text {
     width: 80%;
     margin: 0 auto;
@@ -204,6 +241,7 @@ export default {
 }
 
 .blog {
+  padding: 4rem 0;
   .container-fluid {
     width: 80%;
   }
