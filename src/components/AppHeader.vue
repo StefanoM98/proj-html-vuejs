@@ -78,9 +78,16 @@ header {
     padding: 10px 40px;
     background: linear-gradient(0.25turn, #05a1ce, #1e4589);
     border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      box-shadow: 0px 15px 20px #05a1ce;
+    }
   }
   .my-btn.red {
     background: linear-gradient(0.25turn, #b9276e, #f8626b);
+    &:hover {
+      box-shadow: 0px 15px 20px #b9276e;
+    }
   }
   .jumbotron {
     width: 80%;

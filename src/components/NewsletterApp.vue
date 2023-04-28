@@ -67,7 +67,11 @@ export default {
       border-radius: 60px;
       outline: none;
       background: linear-gradient(0.25turn, #05a1ce, #1e4589);
+      transition: all 0.3s ease 0s;
       color: #ffffff;
+      &:hover {
+        box-shadow: 0px 15px 20px #05a1ce;
+      }
     }
   }
 }

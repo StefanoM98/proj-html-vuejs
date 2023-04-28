@@ -63,10 +63,17 @@ export default {
     text-align: center;
     padding: 10px 40px;
     background: linear-gradient(0.25turn, #05a1ce, #1e4589);
+    transition: all 0.3s ease 0s;
     border-radius: 30px;
   }
   .my-btn.red {
     background: linear-gradient(0.25turn, #b9276e, #f8626b);
+  }
+  .my-btn:hover {
+    box-shadow: 0 15px 20px #05a1ce;
+  }
+  .my-btn.red:hover {
+    box-shadow: 0px 15px 20px #b9276e;
   }
 }
 </style>

@@ -196,7 +196,6 @@ main {
     color: black;
     position: absolute;
     right: 30px;
-    // padding: 0px;
   }
 }
 .services {
@@ -228,6 +227,10 @@ main {
   text-align: center;
   padding: 10px 40px;
   border-radius: 30px;
+  transition: all 0.3s ease 0s;
+}
+.my-btn:hover {
+  box-shadow: 0px 15px 20px #b9276e;
 }
 .jumbomain {
   background: linear-gradient(#0b1953, #020331);
