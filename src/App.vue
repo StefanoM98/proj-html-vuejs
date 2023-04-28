@@ -1,10 +1,12 @@
 <script>
+import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 export default {
   components: {
     AppHeader,
     AppMain,
+    AppFooter,
   },
   data() {
     return {
@@ -48,6 +50,7 @@ export default {
 <template>
   <AppHeader :linkArray="arrayLinks" />
   <AppMain />
+  <AppFooter />
 </template>
 
 <style lang="scss">

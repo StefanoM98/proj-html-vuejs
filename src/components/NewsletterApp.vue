@@ -20,7 +20,7 @@ export default {
           <input
             class="add-email"
             type="email"
-            placeholder="subscribe@me.now"
+            placeholder="Enter your e-mail "
           />
           <button class="submit-email" type="button">
             <span class="before-submit">Subscribe</span>
@@ -50,6 +50,24 @@ export default {
     color: white;
     .text strong {
       font-size: 3rem;
+    }
+  }
+  .form {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    .add-email {
+      border: none;
+      outline: none;
+      padding: 0 100px 0 0;
+    }
+    .submit-email {
+      border: none;
+      padding: 10px;
+      border-radius: 60px;
+      outline: none;
+      background: linear-gradient(0.25turn, #05a1ce, #1e4589);
+      color: #ffffff;
     }
   }
 }
